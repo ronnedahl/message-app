@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.app-container {
+  max-width: 411px;
+  width: 100%;
+  height: 820px;
+  background-color: #19274A;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  z-index: 100;
+  margin-top:4rem
+  
+  }
+
+.app-container-inner {
+
+  
+  width: 90%;
+   
+  margin-top: 2rem;
+ overflow-y: scroll;
+
+}
+
+.red-box {
+  width: 72px;
+  height: 72px;
+  background-color: #EF4343;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 3rem 1.5rem 0px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 888;
+}
+
+.red-box img {
+
+  width: 120px;
+  height: 120px;
+  transform: rotate(45deg);
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.wrapper-text-message-area {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:2rem;
+  z-index:1;
+  
+}
+
+.text-message-area {
+  position: relative;
+  max-width: 379px;
+  height: 222px;
+  background-color: #FFFFFF;
+  margin-top:10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ }
+
+.text-message-area .date {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin: 10px;
+}
+
+.date p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-message {
+  margin-top: 2rem
+}
+
+.wrapper-img{
+  width:25px;
+  height: 25px;
+  
+}
+
+.text-message img{
+
+  width:25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  margin-bottom:10px;
+  margin-right: 30px;
+}
+
+.text-message .pencil-delete{
+  width: 25px; 
+  height: 25px; 
+  margin-right: 5rem;
+  cursor: pointer; 
+
+}
+
+.text-message h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px 10px;
+  line-height: 24px;
+}
+
+.text-message-area .date {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin: 10px;
+}
+
+.date p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.text-message h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px 10px;
+  line-height: 24px;
+}
+
+.text-alias-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.text-alias-wrapper::before {
+  content: '';
+  display: inline-block;
+  width: 10%;
+  height: 2px;
+  background-color: #000;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+/* här börjar skriv meddelande sidan */
+
+.message-write-window {
+  width: 379px;
+  height: 464px;
+  background-color: #FFF;
+  margin-bottom:2rem;
+  }
+
+  .wrapper-message-write-window {
+ align-items: center;
+ padding-top: 1rem;
+  }
+
+.wrapper-message-write-window h3 {
+  padding: 1rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+input[type=text] {
+  padding: 1.8rem 5rem;
+  background-color: transparent;
+  margin-top: 20px;
+  color:white;
+  font-size:1.5rem;
+  text-align: center;
+}
+
+.submit-btn {
+  padding: 1.5rem 5rem;
+  background-color: transparent;
+  margin-top: 20px;
+  background-color: #EF4343;
+  font-size: 1.5rem
+}
+
+#username::placeholder {
+ font-size: 1.2rem;
+  color: white;
+}
+
+.form .username-btn {
+  width: 100%;
+}
+
+.vector-3,
+.vector-2,
+.vector-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* här börjar inga meddelande  sidan */
+.red-note-top {
+
+  width: 42px;
+  height: 60px;
+  background-color: #EF4343;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.message-container-inner-show{
+
+  width:90%;
+  }
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text h1{
+  font-size:2.5rem;
+  color: #FFFF
+}
+
+.message-container-inner-show {
+  position: relative;
+  width: 411px;
+  height: 823px;
+}
+
+.red-note-top p {
+  font-size: 2rem;
+  transform: rotate(-90deg);
+}
+
+.message-container .center-text h1 {
+
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+}
